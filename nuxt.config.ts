@@ -7,6 +7,15 @@ export default defineNuxtConfig({
       theme: 'light-plus'
     },
   },
+  generate: {},
+  app: {
+    head: {
+      meta: [
+        // <meta name="viewport" content="width=device-width, initial-scale=1">
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+      ],
+    }
+  },
   build: {
     postcss: {
       postcssOptions: {
